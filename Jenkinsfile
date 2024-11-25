@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/your-username/ci_cd_pipeline.git', branch: 'main'
+                git url: 'https://github.com/Abhi-v123/ci_cd_pipeline.git', branch: 'main'
             }
         }
         stage('Build') {
@@ -24,6 +24,6 @@ pipeline {
                 echo 'Deploying the project...'
                 // Add your deployment commands here (e.g., 'sh deploy.sh')
             }
-        }
-    }
+        }
+    }
 }

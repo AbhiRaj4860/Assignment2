@@ -4,26 +4,30 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
+                // Clones the Git repository from the specified branch
                 git url: 'https://github.com/AbhiRaj4860/Assignment2.git', branch: 'main'
             }
         }
         stage('Build') {
             steps {
                 echo 'Building the project...'
-                // Add your build commands here (e.g., 'sh build.sh')
+                // Replace with your actual build command, e.g., Maven, Gradle, etc.
+                // sh './build.sh' (uncomment and modify if using a build script)
             }
         }
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                // Add your test commands here (e.g., 'sh test.sh')
+                // Replace with your actual test command, e.g., unit tests, integration tests, etc.
+                // sh './test.sh' (uncomment and modify if using a test script)
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying the project...'
-                // Add your deployment commands here (e.g., 'sh deploy.sh')
+                // Replace with your deployment command or script
+                // sh './deploy.sh' (uncomment and modify if using a deploy script)
             }
-        }
-    }
+        }
+    }
 }

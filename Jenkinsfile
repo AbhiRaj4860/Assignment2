@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/Abhi-v123/ci_cd_pipeline.git', branch: 'main'
+                git url: 'https://github.com/AbhiRaj4860/Assignment2.git', branch: 'main'
             }
         }
         stage('Build') {
